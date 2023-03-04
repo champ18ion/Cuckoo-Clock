@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuckoo Clock</title>
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./src/digital-clock.png"
+      type="image/x-icon"
+    />
+    <!-- Linking CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="title">
+      <h1>Cuckoo Clock</h1>
+    </div>
+    <div class="main-container">
+      <div class="clock-container">
+        <!-- show current Time -->
+        <div class="curr-time" id="current-time"></div>
+        <!-- set Alarm Form -->
+        <form action="" class="alarm-form">
+          <div class="alarm-form-div">
+            <select required name="hours" id="hours"></select>
+            <select required name="minutes" id="minutes"></select>
+            <select required name="seconds" id="seconds"></select>
+            <select required name="pm-am" id="pm-am">
+              <option value="AM">AM</option>
+              <option value="PM">PM</option>
+            </select>
+          </div>
+          <button class="submit-button" id="submit-button" type="submit">
+            Set Alarm
+          </button>
+        </form>
+        <!-- added alarms will be shown here -->
+        <div class="alarms-list-container">
+          <div class="alarms-list-container-title">ALARMS</div>
+          <div class="alarms-list" id="alarms-list"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- linking javascript -->
+    <script src="script.js"></script>
+  </body>
+</html>
